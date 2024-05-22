@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { cover } from "../API/images";
+import cover from "../assets/cover.png";
 import "./RCard.css";
 
 function RCard({card,handleChoice,flipped,disabled}) {

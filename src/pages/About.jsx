@@ -1,4 +1,5 @@
-import { about1, about2 } from "../API/images";
+import about1 from "../assets/about1.png";
+import about2 from "../assets/about2.png"
 function About() {
   return (
     <div className="bg-slate-900">

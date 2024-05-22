@@ -1,5 +1,4 @@
 import { NavLink,Link } from "react-router-dom";
-// import { logo } from "../API/images";
 import Designer from "../assets/Designer.png";
 
 import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react'

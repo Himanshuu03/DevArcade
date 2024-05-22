@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { logo } from "../API/images";
+import Designer from "../assets/Designer.png";
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src={logo} className="h-8" alt="Flowbite Logo" />
+            <img src={Designer} className="h-8" alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             <NavLink to="/">
             DevArcade

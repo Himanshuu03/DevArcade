@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { carob3, carob5, maincar2 } from "../../API/images";
+import carob3 from "../../assets/game-car-ob3.png";
+import carob5 from "../../assets/game-car-ob5.png";
+import maincar2 from "../../assets/main-car2.png";
+
 import './RetroGear.css';
 
 let checkCollision;

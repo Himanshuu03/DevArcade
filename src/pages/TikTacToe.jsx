@@ -1,5 +1,5 @@
-
-import { cross,circle } from "../API/images";
+import cross from "../assets/cross.png";
+import circle from "../assets/circle.png";
 import {useRef, useState } from 'react';
 import {toast} from 'react-toastify';
 let gameGird = ["","","","","","","","",""];
