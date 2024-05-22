@@ -4,7 +4,7 @@ import snake from "../assets/snake.jpeg";
 import tictactoe from "../assets/tictactoe.png";
 import jumper from "../assets/jumper.png";
 import recall from "../assets/recall.png";
-import flappy from "../assets/flappy-bird.png";
+// import flappy from "../assets/flappy-bird.png";
 
 
 const games = [
@@ -50,13 +50,13 @@ const games = [
         src:recall,
         path:"/game/recall-racer"
     },
-    {
-        id:7,
-        title:"Flappy Bird",
-        description:"Navigate through obstacles and see how far you can fly with this addictive bird game.",
-        src:flappy,
-        path:"/game/flappy-bird"
-    },
+    // {
+    //     id:7,
+    //     title:"Flappy Bird",
+    //     description:"Navigate through obstacles and see how far you can fly with this addictive bird game.",
+    //     src:flappy,
+    //     path:"/game/flappy-bird"
+    // },
     
 ];
 
