@@ -1,0 +1,52 @@
+.car1{
+    animation: carob1 7s infinite linear;
+}
+.car2{
+    animation: carob2 4s infinite linear;
+}
+.car3{
+    animation: carob3 6s infinite linear;
+}
+.car4{
+    animation: carob4 8s infinite linear;
+
+}
+.car {
+    transition: left 0.2s ease-out, top 0.2s ease-out;
+  }
+@keyframes carob1 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top:490px;
+    }
+}
+@keyframes carob2 {
+    0% {
+        top: -500px;
+        z-index: -1;
+    }
+    100% {
+        top:490px;
+    }
+}
+
+@keyframes carob3 {
+    0% {
+        top: -400px;
+        z-index: -1;
+    }
+    100% {
+        top:440px;
+    }   
+}
+@keyframes carob4 {
+    0% {
+        top: -500px;
+        z-index: -1;
+    }
+    100% {
+        top:485px;
+    }
+}
