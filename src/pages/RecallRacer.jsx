@@ -1,14 +1,19 @@
 import { useEffect, useState } from "react";
 import RCard from "../components/RCard";
-
+import helmet from "../assets/helmet-1.png";
+import sword from "../assets/sword-1.png";
+import shield from "../assets/shield-1.png";
+import scroll from "../assets/scroll-1.png";
+import ring from "../assets/ring-1.png";
+import potion from "../assets/potion-1.png";
 
 const cardImages = [
-    {"src" : "/src/assets/helmet-1.png",matched:false},
-    {"src" : "/src/assets/potion-1.png",matched:false},
-    {"src" : "/src/assets/sword-1.png",matched:false},
-    {"src" : "/src/assets/shield-1.png",matched:false},
-    {"src" : "/src/assets/scroll-1.png",matched:false},
-    {"src" : "/src/assets/ring-1.png",matched:false}
+    {"src" : helmet,matched:false},
+    {"src" : potion,matched:false},
+    {"src" : sword,matched:false},
+    {"src" : shield,matched:false},
+    {"src" : scroll,matched:false},
+    {"src" : ring,matched:false}
 ]
 
 function RecallRacer() {
