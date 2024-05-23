@@ -1,20 +1,23 @@
+import history from "../assets/history.png";
+import geo from "../assets/geo.png";
+import science from "../assets/science.png";
 const quiz = [
     {
         id: 1,
         title: "History",
-        src:"/src/assets/history.png",
+        src:history,
         path: "/game/quiz/history"
     },
     {
         id: 2,
         title: "Geogrpahy",
-        src:"/src/assets/geo.png",
+        src:geo,
         path:"/game/quiz/geography"
     },
     {
         id: 3,
         title: "Science",
-        src:"/src/assets/science.png",
+        src:science,
         path:"/game/quiz/science"
     }
 ];
