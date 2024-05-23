@@ -1,5 +1,5 @@
-import jumperground from "../../assets/Designer.png";
 import { useEffect, useState, useRef } from "react";
+import  jumperground  from "../../assets/fg.png";
 import './Jumper.css';
 
 function Jumper() {

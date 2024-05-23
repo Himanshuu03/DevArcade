@@ -12,6 +12,7 @@ export default {
       backgroundImage:{
         "jumperbg": "url('/src/assets/bg.png')",
         "retrobg": "url('/src/assets/highway-road.png')",
+        "birdbg":"url('/src/assets/bird.png')",
       }
   }, 
   },
