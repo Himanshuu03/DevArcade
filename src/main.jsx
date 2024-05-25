@@ -36,6 +36,7 @@ const router = createBrowserRouter([
       { path: "/dev-arcade/about-us", element: < About/> },
       { path: "/sign-in/*", element: < SignInPage/> },
       { path: "/sign-up/*", element: < SignUpPage/> },
+      { path:'*', element:<SignUpPage/>},
       {
         element : <DashboardLayout/>,
         children :[

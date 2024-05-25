@@ -1,10 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import  jumperground  from "../../assets/fg.png";
+import { useUser } from "@clerk/clerk-react";
 import './Jumper.css';
 
 function Jumper() {
   const [jump, setJump] = useState(false);
   const [score,setScore] = useState(0);
+  const { user } = useUser();
+  console.log(user.imageUrl);
 
   const jumperRef = useRef(null);
   const hurdleRef = useRef(null);
@@ -68,9 +71,11 @@ function Jumper() {
     <h1 className="text-white text-6xl mb-11 text-center" ref={titleRef}>Jumper</h1>
       <div className="flex h-screen items-center relative flex-col">
         <div className="bg-white w-[700px] h-[400px] bg-jumperbg relative">
-          <img src={jumperground} className="w-[700px] h-[60px] relative top-[340px]" />
-          <div ref={jumperRef} className={`bg-green-400 w-[55px] h-[55px] relative rounded-full top-[225px] left-40 ${jump ? 'jumper' : ''}`}></div>
-          <div ref={hurdleRef} className='relative top-[185px] left-[638px] hardle0 w-[40px] h-[40px] bg-red-900'></div>
+          <img src={jumperground} className="w-[700px] h-[60px] relative top-[340px] jumper" />
+          <div ref={jumperRef} className={`w-[60px] h-[60px] relative rounded-full top-[225px] left-40 ${jump ? 'jumper' : 'roll'}`}>
+            <img src={user.imageUrl} className="w-[60px] h-[60px] rounded-full" />
+          </div>
+          <div ref={hurdleRef} className='relative top-[185px] left-[638px] hardle0 w-[40px] h-[40px] bg-red-900 rounded-md'></div>
         </div>
         <div>
           <button className="w-60 h-20 border-none outline-none cursor-pointer rounded bg-slate-700 text-2xl text-white mt-6" onClick={resetHandler}>Reset</button>

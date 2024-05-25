@@ -60,6 +60,7 @@ function RetroGear() {
 
   useEffect(() => {
     const handleKeyDown = (event) => {
+      setScore(prev => prev + 1); 
       if (event.key === 'ArrowUp' && top > 5) {
         setTop(prev => prev - 40);
       } else if (event.key === 'ArrowDown' && top < 475) {
