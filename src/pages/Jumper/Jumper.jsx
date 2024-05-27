@@ -7,7 +7,7 @@ function Jumper() {
   const [jump, setJump] = useState(false);
   const [score,setScore] = useState(0);
   const { user } = useUser();
-  console.log(user.imageUrl);
+  // console.log(user.imageUrl);
 
   const jumperRef = useRef(null);
   const hurdleRef = useRef(null);
@@ -66,9 +66,13 @@ function Jumper() {
     const hurdle = hurdleRef.current;
     hurdle.style.display = 'flex';
   }
+
   return (
     <> 
-    <h1 className="text-white text-6xl mb-11 text-center" ref={titleRef}>Jumper</h1>
+    {
+      user ? 
+      <>
+      <h1 className="text-white text-6xl mb-11 text-center" ref={titleRef}>Jumper</h1>
       <div className="flex h-screen items-center relative flex-col">
         <div className="bg-white w-[700px] h-[400px] bg-jumperbg relative">
           <img src={jumperground} className="w-[700px] h-[60px] relative top-[340px] jumper" />
@@ -80,7 +84,10 @@ function Jumper() {
         <div>
           <button className="w-60 h-20 border-none outline-none cursor-pointer rounded bg-slate-700 text-2xl text-white mt-6" onClick={resetHandler}>Reset</button>
         </div>
-      </div>
+      </div> 
+      </>:<></>
+    }
+
     </>
   );
 }

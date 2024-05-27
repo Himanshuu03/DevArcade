@@ -16,11 +16,11 @@ const games = [
         path:"/game/mid-b-inz"
     },
     {
-        id:8,
-        title:"Retro Gear",
-        description:"A classic game of dodging other cars and earning points.",
-        src:retro,
-        path:"/game/retro-gear"
+        id:6,
+        title:"Jumper",
+        description:"A simple game of jumping over obstacles with a twist.",
+        src:jumper,
+        path:"/game/jumper"
     },
     {
         id: 5,
@@ -37,11 +37,11 @@ const games = [
         path:"/game/tic-tac-toe"
     },
     {
-        id:6,
-        title:"Jumper",
-        description:"A simple game of jumping over obstacles with a twist.",
-        src:jumper,
-        path:"/game/jumper"
+        id:8,
+        title:"Retro Gear",
+        description:"A classic game of dodging other cars and earning points.",
+        src:retro,
+        path:"/game/retro-gear"
     },
     {
         id: 4,
