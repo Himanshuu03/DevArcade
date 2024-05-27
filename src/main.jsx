@@ -50,7 +50,6 @@ const router = createBrowserRouter([
           { path:'/game/jumper' ,element: <Jumper/>},
           { path:'/game/flappy-bird', element:<FlappyBird/>},
           { path:'/game/retro-gear',element:<RetroGear/>},
-          { path:'*', element:<Landing/>}
         ]
       }
     ]
